@@ -1,4 +1,11 @@
-export default function Answers() {
+export default function Answers({ answers, selectedAnswer, answerState }) {
+    // const shuffledAnswers = useRef();
+
+    // if (!shuffledAnswers.current) {
+    //     shuffledAnswers.current = [...QUESTIONS[activeQuestionIndex].answers];
+    //     shuffledAnswers.current.sort(() => Math.random() - 0.5);
+    // }
+
     return (
         <ul id="answers">
             {shuffledAnswers.current.map((answer) => {
